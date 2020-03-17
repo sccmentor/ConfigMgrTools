@@ -37,5 +37,26 @@ For more details see https://sccmentor.wordpress.com/2015/01/22/adding-dynamic-m
 
 Download - **Add-MachineVariables.zip**
 
+**3. Enumerate device targeted applications and packages**
 
+This script enumerates applications and packages targeted at a device in ConfigMgr 2012. APPIDxx1 (for packages) and APPIDx1 (for applications) variables are created that can be used in a Task Sequence.
 
+The script runs a remote session on the ConfigMgr site server using a service account and can enumerate apps and packages for ConfigMgr sites that manage cross-forest, trusted and untrusted and also workgroup clients.
+
+For full details on usage https://sccmentor.wordpress.com/2015/03/12/dynamically-deploying-packages-and-applications-to-computers-using-a-task-sequence-via-powershell-in-configmgr-2012/
+
+Note that the script can run under Windows 2008 server but requires PowerShell v3.0 and above.
+
+Download - **DynamicAppsPackages.ps1**
+
+**4. Remove partition as part of Windows 10 in-place upgrade with PowerShell**
+
+This script can be added to a Windows 10 in-place upgrade Task Sequence to remove an additional, unwanted, partition such as a D: drive.
+
+For further information on how to use the Tool go to https://sccmentor.wordpress.com/2015/05/08/remove-partition-as-part-of-windows-10-in-place-upgrade-with-powershell/.
+
+If your extra partition is not a D: drive but another drive letter then search and replace D: within the script.
+
+**NOTE - Use with caution on encrypted hard drives and ensure that encryption is disabled prior to running the script.**
+
+Download - **ReconfigureDisk.ps1**
